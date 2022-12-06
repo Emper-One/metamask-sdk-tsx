@@ -17,7 +17,7 @@ import { ProvideMetamask } from 'metamask-hook-gambaru'
 import { useMetamask } from 'metamask-hook-gambaru'
 
 const {
-    we3
+    web3
     address,
     getAddressMetamask, 
     chainId, 
@@ -53,7 +53,7 @@ const {
       'BNB',
       18,
       'https://data-seed-prebsc-1-s1.binance.org:8545/',
-      v'https://testnet.bscscan.com/'
+      'https://testnet.bscscan.com/'
     )
   }
 ```
