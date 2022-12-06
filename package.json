@@ -1,6 +1,6 @@
 {
   "name": "metamask-hook-gambaru",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Metamask provider and Hook",
   "main": "dist/index.js",
   "scripts": {
