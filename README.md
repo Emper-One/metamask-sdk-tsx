@@ -1,7 +1,6 @@
 <h4>Usage!</h4>
-</br>
+
 # :::::::Example Provider::::::
-</br>
 ```js
 import { ProvideMetamask } from 'metamask-hook-gambaru'
 
