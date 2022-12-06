@@ -1,60 +1,64 @@
 <h4>Usage!</h4>
 </br>
-<h3>:::::::Example Provider::::::</h3>
+# :::::::Example Provider::::::
 </br>
-<p>import { ProvideMetamask } from 'metamask-hook-gambaru'</p>
-</br>
+```js
+import { ProvideMetamask } from 'metamask-hook-gambaru'
+
 <div>
   <ProvideMetamask>
     <Component />
   </ProvideMetamask>
 </div>
-</br>
-</br>
-<h3>:::::::Example Hook::::::</h3>
-</br>
-<p>import { useMetamask } from 'metamask-hook-gambaru'</p>
+```
 
-<p>const {</p>
-    <p>we3</p>
-    <p>address,</p>
-    <p>getAddressMetamask, </p>
-    <p>chainId, </p>
-    <p>getChainId, </p>
-    <p>loading, </p>
-    <p>chainName,</p>
-    <p>setChainIdMetamask,</p>
-    <p>errorAddress,</p>
-    <p>warningMessage,</p>
-    <p>notInstalled</p>
-  <p>}: any = useMetamask()</p>
-</br>
-  <p>const handleSignIn = async (e: any) => {</p>
-    <p>e.preventDefault()</p>
-    <p>await getAddressMetamask()</p>
-  <p>}</p>
-</br>
+# :::::::Example Hook::::::
 
-  <p>const handleChain = async (e: any) => {</p>
-    <p>e.preventDefault()</p>
-    <p>await getChainId()</p>
-  <p>}</p>
-</br>
-  <p>const handleSetNetwork = async (e: any) => {</p>
-    <p>e.preventDefault()</p>
-    <p>await setChainIdMetamask(</p>
-      <p>'0x61',</p>
-      <p>'Binance Smart Chain',</p>
-      <p>'https://assets-cdn.trustwallet.com/blockchains/smartchain/info/</p>
-      <p>logo.png',</p>
-      <p>'BNB',</p>
-      <p>'BNB',</p>
-      <p>18,</p>
-      <p>'https://data-seed-prebsc-1-s1.binance.org:8545/',</p>
-      <p>v'https://testnet.bscscan.com/'</p>
-    <p>)</p>
-  <p>}
-</br>
+```js 
+import { useMetamask } from 'metamask-hook-gambaru'
+
+const {
+    we3
+    address,
+    getAddressMetamask, 
+    chainId, 
+    getChainId, 
+    loading, 
+    chainName,
+    setChainIdMetamask,
+    errorAddress,
+    warningMessage,
+    notInstalled
+  }: any = useMetamask()
+```
+```js 
+  const handleSignIn = async (e: any) => {
+    e.preventDefault()
+    await getAddressMetamask()
+  }
+```
+```js 
+  const handleChain = async (e: any) => {
+    e.preventDefault()
+    await getChainId()
+  }
+```
+```js 
+  const handleSetNetwork = async (e: any) => {
+    e.preventDefault()
+    await setChainIdMetamask(
+      '0x61',
+      'Binance Smart Chain',
+      'https://assets-cdn.trustwallet.com/blockchains/smartchain/info/logo.png',
+      'BNB',
+      'BNB',
+      18,
+      'https://data-seed-prebsc-1-s1.binance.org:8545/',
+      v'https://testnet.bscscan.com/'
+    )
+  }
+```
+```js 
 <div>
   <p><strong>{loading ? 'NoAdess' : address}</strong></p>
   <p><strong>{chainId}</strong></p>
@@ -63,4 +67,5 @@
   <button onClick={handleChain}>getChainId</button>
   <button onClick={handleSetNetwork}>setChaiId</button>
 </div>  
+```
 
