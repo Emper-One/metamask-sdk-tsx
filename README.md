@@ -1,14 +1,17 @@
-<p>Usage!</p>
-<h4>:::::::Example Provider::::::</h4>
+<h4>Usage!</h4>
+</br>
+<h3>:::::::Example Provider::::::</h3>
 </br>
 <p>import { ProvideMetamask } from 'metamask-hook-gambaru'</p>
 </br>
-<p><ProvideMetamask></p>
-  <p><Component /></p>
-<p></ProvideMetamask></p>
+<div>
+  <ProvideMetamask>
+    <Component />
+  </ProvideMetamask>
+</div>
 </br>
 </br>
-<h4>:::::::Example Hook::::::</h4>
+<h3>:::::::Example Hook::::::</h3>
 </br>
 <p>import { useMetamask } from 'metamask-hook-gambaru'</p>
 
@@ -52,11 +55,12 @@
     <p>)</p>
   <p>}
 </br>
-  <p>{loading ? 'NoAdess' : address}</p>
-  <p>{chainId}</p>
-  <p>{chainName}</p>
-  <h5 onClick={handleSignIn}>getAddress</h5>
-  <h5 onClick={handleChain}>getChainId</h5>
-  <h5 onClick={handleSetNetwork}>setChaiId</h5>
-  
+<div>
+  <p><strong>{loading ? 'NoAdess' : address}</strong></p>
+  <p><strong>{chainId}</strong></p>
+  <p><strong>{chainName}</strong></p>
+  <button onClick={handleSignIn}>getAddress</button>
+  <button onClick={handleChain}>getChainId</button>
+  <button onClick={handleSetNetwork}>setChaiId</button>
+</div>  
 
