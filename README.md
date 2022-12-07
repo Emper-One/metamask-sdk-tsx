@@ -1,4 +1,4 @@
-<h4>Usage!</h4>
+<h3>Usage for React JS!</h3>
 
 # :::::::Example Provider::::::
 ```js
@@ -59,7 +59,7 @@ const {
 ```
 ```js 
 <div>
-  <p><strong>{loading ? 'NoAdess' : address}</strong></p>
+  <p><strong>{loading ? 'NoAddress' : address}</strong></p>
   <p><strong>{chainId}</strong></p>
   <p><strong>{chainName}</strong></p>
   <button onClick={handleSignIn}>getAddress</button>
